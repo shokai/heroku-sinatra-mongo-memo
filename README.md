@@ -1,6 +1,6 @@
 MongoMemo
 =========
-http://mongo-memo.herokuapp.com
+http://shokai-memo.herokuapp.com
 
 * Ruby1.8.7+ or 1.9.1+
 * MongoDB2.0+ and Mongoid2.4.x
