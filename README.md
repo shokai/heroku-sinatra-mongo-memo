@@ -8,6 +8,13 @@ http://mongo-memo.herokuapp.com
 * MongoHQ - https://addons.heroku.com/mongohq
 
 
+Clone
+-----
+
+    % git clone git://github.com/shokai/heroku-sinatra-mongo-memo.git
+    % cd heroku-sinatra-mongo-memo
+
+
 Install Dependencies
 --------------------
 
