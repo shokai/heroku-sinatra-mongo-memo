@@ -9,7 +9,9 @@ get '/' do
 end
 
 post '/' do
-  m = Memo.new :body => params[:body]
+  body = params[:body].to_s
+  redirect '/' if body.empty?
+  m = Memo.new :body => body
   m.save!
   redirect '/'
 end
