@@ -8,11 +8,15 @@ class Memo
   field :body, :type => String, :default => ""
 
   def self.find_by_id(id)
-    self.where(:id => id).first
+    self.where(:_id => id).first
   end
 
   def self.latests(num=10)
     self.all.desc(:created_at).limit(num)
+  end
+
+  def to_s
+    "#{body} - #{created_at}"
   end
 end
 
