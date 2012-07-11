@@ -54,7 +54,7 @@ Local Ruby <---> Heroku MongoDB
 
     % heroku config --shell | ruby -lane 'puts "export "+$_'
 
- => export MONGOLAB_URI=mongodb://heroku~~@mongolab.com/herokuapp12345~~
+ => export MONGOLAB_URI=mongodb://heroku1234@mongolab.com/herokuapp12345foo
 
     % ruby write.rb hello!!
 
