@@ -4,7 +4,8 @@ get '/' do
     "<p>#{Rack::Utils.escape_html m.body} - <a href='/#{m.id}'>#{m.created_at}<a><p>"
   }.join('')
 
-  "<html><form method='POST' action='/'><input type='text' name='body' size=70 /><input type='submit' /></form>#{mems}</html>"
+  url = 'https://github.com/shokai/heroku-sinatra-mongo-memo'
+  "<html><form method='POST' action='/'><input type='text' name='body' size=70 /><input type='submit' /></form>#{mems}<p><a href='#{url}'>#{url}</a></p></html>"
 end
 
 post '/' do
