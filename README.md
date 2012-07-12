@@ -41,6 +41,7 @@ Deploy
 Heroku Ruby <---> Heroku MongoDB
 
     % heroku create --stack cedar
+    % heroku config:add TZ=Asia/Tokyo
 
 enable addon MongoLab or MongoHQ
 
